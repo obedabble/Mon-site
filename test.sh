@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Vérifie si le mot "Bienvenue" est dans index.html
-if grep -q "Bienvenue" index.html; then
-  echo "✅ Test réussi"
+if grep -q "Contactez-nous" index.html; then
+  echo "✅ Test réussi : formulaire détecté"
   exit 0
 else
-  echo "❌ Test échoué"
+  echo "❌ Test échoué : formulaire non trouvé"
   exit 1
 fi
